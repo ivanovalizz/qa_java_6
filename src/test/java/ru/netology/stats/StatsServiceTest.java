@@ -1,13 +1,13 @@
-package ru.netology.ivanovalizz.qajava;
+package ru.netology.stats;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class SaleStatisticsServiceTest {
+public class StatsServiceTest {
 
     @Test
     public void shouldFindYearSaleSum () {
-        SaleStatisticsService service = new SaleStatisticsService();
+        StatsService service = new StatsService();
         long[] array = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 180;
@@ -18,7 +18,7 @@ public class SaleStatisticsServiceTest {
 
     @Test
     public void shouldFindAverageYearSale () {
-        SaleStatisticsService service = new SaleStatisticsService();
+        StatsService service = new StatsService();
         long[] array = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 15;
@@ -29,7 +29,7 @@ public class SaleStatisticsServiceTest {
 
     @Test
     public void shouldFindMaxSalesMonth () {
-        SaleStatisticsService service = new SaleStatisticsService();
+        StatsService service = new StatsService();
         long[] array = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 8;
@@ -40,7 +40,7 @@ public class SaleStatisticsServiceTest {
 
     @Test
     public void shouldFindMinSalesMonth () {
-        SaleStatisticsService service = new SaleStatisticsService();
+        StatsService service = new StatsService();
         long[] array = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 9;
@@ -51,7 +51,7 @@ public class SaleStatisticsServiceTest {
 
     @Test
     public void shouldFindBelowAverageSalesMonths () {
-        SaleStatisticsService service = new SaleStatisticsService();
+        StatsService service = new StatsService();
         long[] array = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 5;
@@ -62,7 +62,7 @@ public class SaleStatisticsServiceTest {
 
     @Test
     public void shouldFindAboveAverageSalesMonths () {
-        SaleStatisticsService service = new SaleStatisticsService();
+        StatsService service = new StatsService();
         long[] array = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 5;

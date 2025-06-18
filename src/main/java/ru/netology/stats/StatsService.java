@@ -1,6 +1,6 @@
-package ru.netology.ivanovalizz.qajava;
+package ru.netology.stats;
 
-public class SaleStatisticsService {
+public class StatsService {
 
     public long yearSalesSum (long[] array) { // Ищет сумму всех продаж за год
         long sum = 0;
